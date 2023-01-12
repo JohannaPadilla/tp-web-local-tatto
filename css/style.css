@@ -41,7 +41,7 @@ ul {
 ul li {
   text-transform: uppercase;
   list-style: none;
-  line-height: 2em;
+  line-height: 4em;
 }
 li::before {
   content: "•";
@@ -914,7 +914,7 @@ footer a {
   }
 
   nav ul {
-    gap: 50px;
+    gap: 20px;
   }
   /* Destacados */
   .container-destacados {
