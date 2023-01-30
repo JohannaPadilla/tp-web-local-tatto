@@ -1,6 +1,8 @@
 /* Importe de fuentes */
+@import "variablesGlobal";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins:ital,wght@1,200&family=Roboto:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
+@import "cuidados";
 
 /* Styles Body general */
 * {
@@ -45,20 +47,20 @@ ul li {
 }
 li::before {
   content: "•";
-  color: cornsilk;
+  color: $color-primario;
 }
 
 ul li a {
   text-decoration: none;
-  color: cornsilk;
+  color: $color-primario;
   font-weight: bold;
 }
 ul li a:hover {
-  color: cornsilk;
+  color: $color-primario;
 }
 /* imagen */
 header figure img {
-  border: 1px solid cornsilk;
+  border: 1px solid $color-primario;
   border-radius: 50%;
 }
 
@@ -120,7 +122,7 @@ main div p {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  color: cornsilk;
+  color: $color-primario;
   padding: 10px;
   height: auto;
 }
@@ -153,7 +155,7 @@ footer a {
 }
 
 .div-h3 {
-  background-color: cornsilk;
+  background-color: $color-primario;
 }
 
 .div-iconos {
@@ -186,7 +188,7 @@ footer a {
 .main-titulo {
   font-size: 20px;
   margin: 10px;
-  background-color: cornsilk;
+  background-color: $color-primario;
   padding: 2px;
   border-radius: 10px;
   text-decoration: underline dotted;
@@ -300,7 +302,7 @@ footer a {
   font-weight: bold;
   font-size: 2rem;
   text-decoration: underline;
-  background-color: antiquewhite;
+  background-color: $color-secundario;
   padding: 0.5em;
 }
 
@@ -425,7 +427,7 @@ footer a {
 
 /* CONTACTO */
 /* section */
-/* Viedo */
+/* Videoo */
 .sec-div-contacto {
   margin: 10px;
   display: flex;
@@ -457,7 +459,7 @@ footer a {
 }
 
 .sec-div-h4-contacto {
-  font-size: 22px;
+  font-size: 17px;
   padding: 5px;
   border-radius: 20px 0;
   text-transform: uppercase;
@@ -466,7 +468,7 @@ footer a {
 
 .sec-ul-contacto {
   list-style: circle;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: none;
 }
 .sec-ul-contacto::before {
@@ -507,13 +509,14 @@ footer a {
 }
 .sec-contacto {
   display: grid;
-  width: auto;
+  width: areas-cuidadosauto;
   height: auto;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "contacto-data"
     "iframe";
 }
+
 
 /* ---------------------------------------------- Salto medida minima 500px  -----------------------------------*/
 @media (min-width: 500px) {
@@ -597,13 +600,13 @@ footer a {
     width: 100%;
     height: 489px;
   }
-  .fig-galeria{
+  .fig-galeria {
     overflow: hidden;
   }
-  .fig-galeria img{
+  .fig-galeria img {
     transition: all 2s;
   }
-  .fig-galeria:hover img{
+  .fig-galeria:hover img {
     transform: scale(1.5);
   }
 
@@ -712,7 +715,7 @@ footer a {
   /* Navbar */
   li::before {
     content: "•";
-    color: cornsilk;
+    color: $color-primario;
   }
   nav {
     display: flex;
@@ -807,14 +810,14 @@ footer a {
   .enlace-link a {
     text-decoration: none;
     color: black;
-    background: antiquewhite;
+    background: $color-secundario;
     font-weight: bold;
     padding: 0.5em;
     border-radius: 50px;
   }
   .enlace-link a:hover {
     background-color: rgb(145, 145, 145);
-    color: whitesmoke;
+    color: $color-terciario;
   }
 
   .div-sorteo {
@@ -824,7 +827,7 @@ footer a {
     display: initial;
   }
 
-  .card-tamaño{
+  .card-tamaño {
     max-width: 18rem;
   }
 
@@ -856,7 +859,7 @@ footer a {
 
   /* GALERIA*/
   /* Grid-galeria */
-  .fig-galeria{
+  .fig-galeria {
     overflow: unset;
   }
   .areas-galeria {
@@ -890,6 +893,18 @@ footer a {
       "header-producto section-producto"
       "header-producto footer-producto";
   }
+  /* Grid-cuidados */
+  .areas-cuidados {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 10% auto 20%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      "header-cuidados main-cuidados"
+      "header-cuidados section-cuidados"
+      "header-cuidados footer-cuidados";
+  }
 }
 
 /* ---------------------------------------------- Salto medida minima 1400px ------------------------------ */
@@ -899,17 +914,17 @@ footer a {
   /* Nabbar */
   li::before {
     content: "";
-  }  
+  }
   ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: xx-large;
-    background-color: antiquewhite;
+    background-color: $color-secundario;
     padding: 10px;
   }
   ul li a:hover {
-    color: whitesmoke;
+    color: $color-terciario;
     background-color: rgb(145, 145, 145);
   }
 
