@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Venta, productos, local minorista">
-    <meta name="description" content="Contamos con produtos a la venta - Articulos varios">
+    <meta name="keywords" content="Venta, productos, local minorista" />
+    <meta
+      name="description"
+      content="Contamos con produtos a la venta - Articulos varios"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,7 +27,7 @@
         <div class="contenedor-nav-fig">
           <!-- Logo de pagina -->
           <figure>
-            <a href="../index.html">
+            <a href="https://www.instagram.com/se.real.tattoo/?hl=es">
               <img
                 src="../img/logo.png"
                 alt="Logo Se Real Tattoo (local de tatuajes)"
@@ -43,12 +46,48 @@
               <li>
                 <a href="cuidados.html">Cuidados</a>
               </li>
-              <li>
-                <a href="galeria.html">Galeria</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="dropdown-toggle"
+                  href="galeria.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Galeria
+                </a>
+                <ul
+                  class="dropdown-menu menu-drop"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li class="li-drop">
+                    <a
+                      class="dropdown-item item-drop"
+                      href="galeria.html"
+                      >Galeria Completa</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="li-drop">
+                    <a
+                      class="dropdown-item item-drop"
+                      href="galeria.html#ancla-trabajos"
+                      >Trabajos Realizados</a
+                    >
+                  </li>
+                  <li class="li-drop">
+                    <a
+                      class="dropdown-item item-drop"
+                      href="galeria.html#ancla-diseños"
+                      >Diseños disponibles</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li>
+              <!-- <li>
                 <a href="productos.html">Productos</a>
-              </li>
+              </li> -->
               <li>
                 <a href="contacto.html">Contacto</a>
               </li>
@@ -81,7 +120,7 @@
                 <div class="card-body div-card-body">
                   <h5 class="card-title h5-productos">Papelillos OCB</h5>
                   <h6 class="card-subtitle h6-productos">
-                    $ 200
+                    $ 100
                     <small class="text-muted fw-light">c/u</small>
                   </h6>
                   <div class="mas-info card-text">
@@ -100,11 +139,7 @@
                     <div class="collapse" id="papelillos">
                       <div class="card card-body">
                         <p class="p-productos">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quam cumque enim consequatur cupiditate
-                          similique, omnis, sunt facilis debitis, ullam quos
-                          quisquam quia? Quibusdam earum deserunt, cupiditate ea
-                          explicabo aperiam doloremque.
+                          Contiene 50 papelillos.
                         </p>
                       </div>
                     </div>
@@ -126,7 +161,7 @@
                 <div class="card-body div-card-body">
                   <h5 class="card-title h5-productos">Picador</h5>
                   <h6 class="card-subtitle h6-productos">
-                    $ 200
+                    $ 150
                     <small class="text-muted fw-light">c/u</small>
                   </h6>
                   <div class="mas-info">
@@ -145,11 +180,7 @@
                     <div class="collapse" id="picador">
                       <div class="card card-body">
                         <p class="p-productos">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quam cumque enim consequatur cupiditate
-                          similique, omnis, sunt facilis debitis, ullam quos
-                          quisquam quia? Quibusdam earum deserunt, cupiditate ea
-                          explicabo aperiam doloremque.
+                          Material de plastico resistente con un centro imantado.
                         </p>
                       </div>
                     </div>
@@ -164,7 +195,7 @@
             <div class="col">
               <div class="card text-center sombra-div">
                 <img
-                  src="../img/armador.jpg"
+                  src="../img/armador.png"
                   class="card-img-top"
                   st
                   alt="Armador de cigarrillos"
@@ -172,7 +203,7 @@
                 <div class="card-body div-card-body">
                   <h5 class="card-title h5-productos">Armadores</h5>
                   <h6 class="card-subtitle h6-productos">
-                    $ 200
+                    $ 130
                     <small class="text-muted fw-light">c/u</small>
                   </h6>
                   <div class="mas-info">
@@ -191,11 +222,7 @@
                     <div class="collapse" id="armadores">
                       <div class="card card-body">
                         <p class="p-productos">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quam cumque enim consequatur cupiditate
-                          similique, omnis, sunt facilis debitis, ullam quos
-                          quisquam quia? Quibusdam earum deserunt, cupiditate ea
-                          explicabo aperiam doloremque.
+                          Plastico con banda de goma.
                         </p>
                       </div>
                     </div>
@@ -217,7 +244,7 @@
                 <div class="card-body div-card-body">
                   <h5 class="card-title h5-productos">Encendedores</h5>
                   <h6 class="card-subtitle h6-productos">
-                    $ 200
+                    $ 80
                     <small class="text-muted fw-light">c/u</small>
                   </h6>
                   <div class="mas-info">
@@ -236,11 +263,7 @@
                     <div class="collapse" id="encendedores">
                       <div class="card card-body">
                         <p class="p-productos">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quam cumque enim consequatur cupiditate
-                          similique, omnis, sunt facilis debitis, ullam quos
-                          quisquam quia? Quibusdam earum deserunt, cupiditate ea
-                          explicabo aperiam doloremque.
+                          Colores varios.
                         </p>
                       </div>
                     </div>
@@ -262,7 +285,7 @@
                 <div class="card-body div-card-body">
                   <h5 class="card-title h5-productos">Ceniceros</h5>
                   <h6 class="card-subtitle h6-productos">
-                    $ 200
+                    $ 250
                     <small class="text-muted fw-light">c/u</small>
                   </h6>
                   <div class="mas-info">
@@ -281,11 +304,7 @@
                     <div class="collapse" id="ceniceros">
                       <div class="card card-body">
                         <p class="p-productos">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quam cumque enim consequatur cupiditate
-                          similique, omnis, sunt facilis debitis, ullam quos
-                          quisquam quia? Quibusdam earum deserunt, cupiditate ea
-                          explicabo aperiam doloremque.
+                          Diferentes colores y motivos a eleccion.
                         </p>
                       </div>
                     </div>
@@ -300,14 +319,14 @@
             <div class="col">
               <div class="card text-center sombra-div">
                 <img
-                  src="../img/pipas.jpg"
+                  src="../img/pipas.png"
                   class="card-img-top"
                   alt="Pipas metalicas para tabaco"
                 />
                 <div class="card-body div-card-body">
                   <h5 class="card-title h5-productos">Pipas metalicas</h5>
                   <h6 class="card-subtitle h6-productos">
-                    $ 200
+                    $ 180
                     <small class="text-muted fw-light">c/u</small>
                   </h6>
                   <div class="mas-info">
@@ -326,11 +345,7 @@
                     <div class="collapse" id="pipas">
                       <div class="card card-body">
                         <p class="p-productos">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quam cumque enim consequatur cupiditate
-                          similique, omnis, sunt facilis debitis, ullam quos
-                          quisquam quia? Quibusdam earum deserunt, cupiditate ea
-                          explicabo aperiam doloremque.
+                          Pipas de material metalico de calidad, en varios colores.
                         </p>
                       </div>
                     </div>
@@ -352,7 +367,7 @@
                 <div class="card-body div-card-body">
                   <h5 class="card-title h5-productos">Bandejas customizadas</h5>
                   <h6 class="card-subtitle h6-productos">
-                    $ 200
+                    $ 300
                     <small class="text-muted fw-light">c/u</small>
                   </h6>
                   <div class="mas-info">
@@ -371,11 +386,7 @@
                     <div class="collapse" id="bandejas">
                       <div class="card card-body">
                         <p class="p-productos">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quam cumque enim consequatur cupiditate
-                          similique, omnis, sunt facilis debitis, ullam quos
-                          quisquam quia? Quibusdam earum deserunt, cupiditate ea
-                          explicabo aperiam doloremque.
+                          Pedi tu bandeja customizada.
                         </p>
                       </div>
                     </div>

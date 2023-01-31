@@ -58,6 +58,19 @@ ul li a {
 ul li a:hover {
   color: $color-primario;
 }
+.li-drop{
+  line-height: 2em;
+}
+.menu-drop{
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+.item-drop{
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  text-align: center;
+}
 /* imagen */
 header figure img {
   border: 1px solid $color-primario;
@@ -234,6 +247,7 @@ footer a {
 
 .p-quienes_somos {
   font-size: 20px;
+  text-align: center;
 }
 
 /* Imagen */
@@ -388,8 +402,14 @@ footer a {
   border-top: 1px solid rgb(211, 210, 210);
 }
 
+.card-img{
+  max-width: 438px;
+  max-height: 438px;
+}
+
 .sombra-div {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  height: 100%;
 }
 
 /* Grid productos */
@@ -441,6 +461,7 @@ footer a {
   border-radius: 20px;
   border-bottom: 10px inset #767676;
   margin-bottom: 1em;
+  background-color: black;
 }
 
 /* Cuadro de texto */

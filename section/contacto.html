@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Mauro Blanco, contacto, instagram">
-    <meta name="description" content="Comunicate con nosotros tel: 1587954622">
+    <meta name="keywords" content="Mauro Blanco, contacto, instagram" />
+    <meta
+      name="description"
+      content="Comunicate con nosotros tel: 1587954622"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,7 +27,7 @@
         <div class="contenedor-nav-fig">
           <!-- Logo de pagina -->
           <figure>
-            <a href="../index.html">
+            <a href="https://www.instagram.com/se.real.tattoo/?hl=es">
               <img
                 src="../img/logo.png"
                 alt="Logo Se Real Tattoo (local de tatuajes)"
@@ -43,15 +46,51 @@
               <li>
                 <a href="cuidados.html">Cuidados</a>
               </li>
-              <li>
-                <a href="galeria.html">Galeria</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="dropdown-toggle"
+                  href="galeria.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Galeria
+                </a>
+                <ul
+                  class="dropdown-menu menu-drop"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li class="li-drop">
+                    <a
+                      class="dropdown-item item-drop"
+                      href="galeria.html"
+                      >Galeria Completa</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li class="li-drop">
+                    <a
+                      class="dropdown-item item-drop"
+                      href="galeria.html#ancla-trabajos"
+                      >Trabajos Realizados</a
+                    >
+                  </li>
+                  <li class="li-drop">
+                    <a
+                      class="dropdown-item item-drop"
+                      href="galeria.html#ancla-diseños"
+                      >Diseños disponibles</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="productos.html">Productos</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="contacto.html">Contacto</a>
-              </li>
+              </li> -->
             </ul>
           </nav>
         </div>
@@ -68,12 +107,9 @@
       <section class="sec-contacto section-contacto">
         <!-- Contenedor video -->
         <div class="sec-div-contacto iframe">
-          <iframe
-            class="sec-div-if-contacto"
-            src="../multimedia/video-local.mp4"
-            height="300"
-            autostart=""
-          ></iframe>
+          <video class="sec-div-if-contacto" controls>
+            <source src="../multimedia/video-local.mp4" type="video/mp4">
+           </video>
         </div>
         <!-- Contenedor con informacion -->
         <div class="sec-div-contacto contacto-data">
