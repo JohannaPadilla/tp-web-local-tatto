@@ -16,7 +16,7 @@
   }
 }
 .sec-cuidados .div-info-cuidados {
-  background-image: url(../img/cuidado.png);
+  background-image: url(../img/curacion.png);
   background-size: cover;
   padding: 6em 3em;
   margin: 2em;
@@ -161,6 +161,10 @@ header figure img {
   border-radius: 50%;
 }
 
+.logo-cuadrado {
+  display: none;
+}
+
 /* Main */
 main {
   display: flex;
@@ -284,7 +288,7 @@ footer a {
   border-radius: 10px;
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
-  background-image: linear-gradient(rgba(56, 56, 56, 0.8323704482), rgba(255, 255, 255, 0.8323704482)), url("../img/se.real.fondo.png");
+  background-image: linear-gradient(rgba(56, 56, 56, 0.8323704482), rgba(255, 255, 255, 0.8323704482)), url("../img/fondo.png");
   height: 6em;
 }
 
@@ -318,20 +322,21 @@ footer a {
 .h3-quienes_somos {
   text-align: center;
   font-size: 30px;
+  font-weight: bold;
 }
 
 .p-quienes_somos {
   font-size: 20px;
   text-align: center;
+  font-weight: bolder;
+  color: black;
 }
 
 /* Imagen */
 .fig-img-quienes_somos {
   margin-top: 10px;
-  border-radius: 50px 20px;
   max-width: 480px;
   height: auto;
-  border-radius: 70px 20px;
   border-bottom: 5px inset #767676;
   border-left: 5px inset #2e2c2c;
 }
@@ -440,9 +445,9 @@ footer a {
 /* Section */
 /* Style de cards */
 .h5-productos {
-  padding: 5px;
-  font-size: 2em;
   font-weight: bolder;
+  padding: 0.5em 0;
+  font-size: 2em;
 }
 
 .h6-productos {
@@ -527,6 +532,7 @@ footer a {
   margin: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 0;
 }
 
@@ -630,7 +636,7 @@ footer a {
     justify-content: space-between;
     align-items: center;
     height: 40em;
-    background-image: linear-gradient(rgba(56, 56, 56, 0.5), rgba(255, 255, 255, 0.5)), url("../img/tattoo-Wallpaper.jpg");
+    background-image: linear-gradient(rgba(56, 56, 56, 0.5), rgba(255, 255, 255, 0.5)), url("../img/wallpaper.jpg");
   }
   .div-titulos {
     display: flex;
@@ -764,6 +770,7 @@ footer a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   /* QUIENES SOMOS */
   /* Section */
@@ -903,7 +910,7 @@ footer a {
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-rows: auto auto 20%;
+    grid-template-rows: 10% auto 20%;
     grid-template-columns: 20% 80%;
     grid-template-areas: "header-contacto main-contacto" "header-contacto section-contacto" "header-contacto footer-contacto";
   }
@@ -949,6 +956,27 @@ footer a {
   /* INDEX */
   /* Header */
   /* Nabbar */
+  header {
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: center;
+  }
+  header figure img {
+    height: 100%;
+    width: 18rem;
+    border: 1px solid cornsilk;
+    border-radius: 0;
+  }
+  .logo-cuadrado {
+    display: flex;
+  }
+  .logo-redondo {
+    display: none;
+  }
+  .contenedor-nav-fig {
+    position: fixed;
+    justify-content: center;
+  }
   li::before {
     content: "";
   }
@@ -982,7 +1010,7 @@ footer a {
   /* Section */
   .div-quienes_somos {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   /* PRODUCTOS */
   /* Section */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Venta, productos, local minorista" />
+    <meta name="keywords" content="Venta, Productos, Venta minorista" />
     <meta
       name="description"
       content="Contamos con produtos a la venta - Articulos varios"
@@ -26,10 +26,18 @@
       <header class="header-producto">
         <div class="contenedor-nav-fig">
           <!-- Logo de pagina -->
-          <figure>
+          <figure class="logo-redondo">
             <a href="https://www.instagram.com/se.real.tattoo/?hl=es">
               <img
                 src="../img/logo.png"
+                alt="Logo Se Real Tattoo (local de tatuajes)"
+              />
+            </a>
+          </figure>
+          <figure class="logo-cuadrado">
+            <a href="https://www.instagram.com/se.real.tattoo/?hl=es">
+              <img
+                src="../img/estudio.PNG"
                 alt="Logo Se Real Tattoo (local de tatuajes)"
               />
             </a>
@@ -62,9 +70,7 @@
                   aria-labelledby="navbarDropdown"
                 >
                   <li class="li-drop">
-                    <a
-                      class="dropdown-item item-drop"
-                      href="galeria.html"
+                    <a class="dropdown-item item-drop" href="galeria.html"
                       >Galeria Completa</a
                     >
                   </li>
@@ -106,8 +112,8 @@
       <!-- Section - Esta seccion solo se muestra a partir de un tamaño minimo de pantalla de 1200px - Contiene los destacados  -->
       <section class="section-producto">
         <!-- Contenedor de productos -->
-        <div>
-          <div class="row fig-productos sec-productos">
+        <div class="m-5">
+          <div class="row sec-productos">
             <div class="col">
               <div class="card text-center sombra-div">
                 <div class="acercar">
@@ -138,9 +144,7 @@
                     </p>
                     <div class="collapse" id="papelillos">
                       <div class="card card-body">
-                        <p class="p-productos">
-                          Contiene 50 papelillos.
-                        </p>
+                        <p class="p-productos">Contiene 50 papelillos.</p>
                       </div>
                     </div>
                   </div>
@@ -180,7 +184,8 @@
                     <div class="collapse" id="picador">
                       <div class="card card-body">
                         <p class="p-productos">
-                          Material de plastico resistente con un centro imantado.
+                          Material de plastico resistente con un centro
+                          imantado.
                         </p>
                       </div>
                     </div>
@@ -221,9 +226,7 @@
                     </p>
                     <div class="collapse" id="armadores">
                       <div class="card card-body">
-                        <p class="p-productos">
-                          Plastico con banda de goma.
-                        </p>
+                        <p class="p-productos">Plastico con banda de goma.</p>
                       </div>
                     </div>
                   </div>
@@ -262,9 +265,7 @@
                     </p>
                     <div class="collapse" id="encendedores">
                       <div class="card card-body">
-                        <p class="p-productos">
-                          Colores varios.
-                        </p>
+                        <p class="p-productos">Colores varios.</p>
                       </div>
                     </div>
                   </div>
@@ -304,89 +305,7 @@
                     <div class="collapse" id="ceniceros">
                       <div class="card card-body">
                         <p class="p-productos">
-                          Diferentes colores y motivos a eleccion.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer text-muted">
-                  <button type="button" class="btn btn-success">Comprar</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card text-center sombra-div">
-                <img
-                  src="../img/pipas.png"
-                  class="card-img-top"
-                  alt="Pipas metalicas para tabaco"
-                />
-                <div class="card-body div-card-body">
-                  <h5 class="card-title h5-productos">Pipas metalicas</h5>
-                  <h6 class="card-subtitle h6-productos">
-                    $ 180
-                    <small class="text-muted fw-light">c/u</small>
-                  </h6>
-                  <div class="mas-info">
-                    <p class="p-productos">
-                      <a
-                        class="a-productos"
-                        data-bs-toggle="collapse"
-                        href="#pipas"
-                        role="button"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        Ver mas detalles
-                      </a>
-                    </p>
-                    <div class="collapse" id="pipas">
-                      <div class="card card-body">
-                        <p class="p-productos">
-                          Pipas de material metalico de calidad, en varios colores.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer text-muted">
-                  <button type="button" class="btn btn-success">Comprar</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card text-center sombra-div">
-                <img
-                  src="../img/Bandeja.webp"
-                  class="card-img-top"
-                  alt="Bandejas para armar cigarrillos"
-                />
-                <div class="card-body div-card-body">
-                  <h5 class="card-title h5-productos">Bandejas customizadas</h5>
-                  <h6 class="card-subtitle h6-productos">
-                    $ 300
-                    <small class="text-muted fw-light">c/u</small>
-                  </h6>
-                  <div class="mas-info">
-                    <p class="p-productos">
-                      <a
-                        class="a-productos"
-                        data-bs-toggle="collapse"
-                        href="#bandejas"
-                        role="button"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        Ver mas detalles
-                      </a>
-                    </p>
-                    <div class="collapse" id="bandejas">
-                      <div class="card card-body">
-                        <p class="p-productos">
-                          Pedi tu bandeja customizada.
+                          Diferentes colores y motivos a elección.
                         </p>
                       </div>
                     </div>
@@ -457,19 +376,19 @@
             <a href="https://www.facebook.com/">
               <img
                 src="../img/icons8-facebook-nuevo.svg"
-                alt="Letra F en azul, icono de Facebook"
+                alt="Icono de Facebook. Letra F en azul."
               />
             </a>
             <a href="https://www.instagram.com/se.real.tattoo/?hl=es">
               <img
-                src="../img/icons8-instagram (1).svg"
-                alt="Camara de fotos, icono de Instagram"
+                src="../img/icons8-instagram.svg"
+                alt="Icono de Instagram. Camara de fotos."
               />
             </a>
             <a href="https://wa.me/15551234567">
               <img
-                src="../img/icons8-whatsapp (3).svg"
-                alt="Telefono en globo de dialogo verde, icono de whatsapp"
+                src="../img/icons8-whatsapp.svg"
+                alt="Icono de whatsapp. Telefono en globo de dialogo verde."
               />
             </a>
           </div>
